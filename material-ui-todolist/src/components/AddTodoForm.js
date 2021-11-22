@@ -1,4 +1,4 @@
-import { Button, InputBase, Paper } from "@material-ui/core";
+import { Button, InputBase } from "@material-ui/core";
 
 function AddTodoForm() {
   return (
@@ -17,19 +17,6 @@ function AddTodoForm() {
         </Button>
       </form>
     </div>
-    //     <form>
-    //       <TextField fullWidth />
-    //       {/* <Input></Input> */}
-    //       <Button
-    //         type="submit"
-    //         variant="text"
-    //         color="whites"
-    //         style={{ width: "10%" }}
-    //       >
-    //         Add
-    //       </Button>
-    //     </form>
-    //   );
   );
 }
 
