@@ -5,38 +5,17 @@ const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
-  //   const [userInput, setUserInput] = useState({
-  //     enteredTitle: "",
-  //     enteredAmount: "",
-  //     enteredDate: "",
-  //   });
 
   const titleChangeHandler = ({ target }) => {
     setEnteredTitle(target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredTitle: target.value,
-    // });
-
-    // setUserInput((prevState) => {
-    //   return { ...prevState, enteredTitle: target.value };
-    // });
   };
 
   const amountChangeHandler = ({ target }) => {
     setEnteredAmount(target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredAmount: target.value,
-    // });
   };
 
   const dateChangeHandler = ({ target }) => {
     setEnteredDate(target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredDate: target.value,
-    // });
   };
 
   const submitHandler = (e) => {
@@ -48,7 +27,7 @@ const ExpenseForm = (props) => {
       date: new Date(enteredDate),
     };
 
-    props.onSaveExpenseData(expenseData);
+    props.onSaveExpenseData(expenseData); // NewExpense 컴포넌트로 올려준다.
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");

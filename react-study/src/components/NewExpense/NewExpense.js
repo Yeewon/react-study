@@ -10,7 +10,7 @@ const NewExpense = (props) => {
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
-    props.onAddExpense(expenseData);
+    props.onAddExpense(expenseData); // 부모 컴포넌트(App.js)로 올려준다.
     setIsEditing(false);
   };
 
